@@ -1,0 +1,47 @@
+<!Doctype=html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel='stylesheet' href='./weather.css'>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>
+        Weather App
+    </title>
+</head>
+<body onload="getLocation(event)">
+    <header id='we'>
+        <img  class='icon1' src='./images/weatherApp.jfif'>
+       <h1>WeatherApp</h1>
+       <div class='menu'>
+           <ul>
+           <li> <a href="./WeatherUpdate.html" >Home</a></li>
+           <li> <a href="./airQuality.html" class="active">AQI</a></li>
+            </ul>
+       </div>
+        <div class='search'>
+        <input id='btn' type="image" name="GeoLocate" src="./images/geolocate.jpg"  alt="geolocate me" onclick="getLocation(event)"> 
+    <form>   
+   <input id='city' placeholder="Enter City" type="text">
+   <input id='submit' type="submit">
+    </form>
+    </div>
+</header>
+    <h1 id='city1'></h1>
+    <div class='container'>
+    <div class=card>
+        <div class='temp'>
+    <img  class="icon">
+    <h2 id='temp'></h2>
+        </div>
+    <p id="description"></p>
+    <p id='humidity'></p>
+    <p id='Wind'></p>
+     </div>
+    </div>
+    <footer>
+        Coded by Ifrah Kamal(20MCA28)
+    </footer>
+    <script src='./main.js'></script>
+</body>
+</html>

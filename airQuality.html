@@ -1,0 +1,45 @@
+<!Doctype=html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       Air Quality
+    </title>
+    <script src='./location.js'> </script>
+    <link rel="stylesheet" href='./weather.css'>   
+</head>
+<body onload="getLocation(event)">
+    <header id='we'>
+        <img  class='icon1' src='./images/weatherApp.jfif'>
+        <h1>WeatherApp</h1>
+        <div class='menu'>
+            <ul>
+            <li> <a href="./index.html" >Home</a></li>
+            <li> <a href="./airQuality.html" class="active">AQI</a></li>
+             </ul>
+        </div>
+        <div class='search'>
+        <input id='btn' type="image" name="GeoLocate" src="./images/geolocate.jpg"  alt="geolocate me" onclick="getLocation(event)"> 
+    <form>   
+   <input id='city' placeholder="Enter City" type="text">
+   <input id='submit' type="submit" onclick="geo(event)">
+    </form>
+    </div>
+    </header>
+    <h1 id='city1'></h1>
+    <div class='container'>
+    <div class='card'>
+         <p id='aqi'></p>
+         <p id='des'></p>
+         <p id='comp'></p>
+         <p id='co'></p>
+         <p id='so2'></p>
+         <p id='no'></p>
+         </div>
+    </div>
+    <footer>
+        Coded by Ifrah Kamal(20MCA28)
+    </footer>
+</body>
+</html>
